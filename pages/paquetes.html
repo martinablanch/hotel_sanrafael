@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes | Hotel San Rafael</title>
+    <link rel="stylesheet" href="../estilos.css/styles.css">
+    <link rel="stylesheet" href="../estilos.css/paquetes.css">
+    <link href="https://file.myfontastic.com/ojYRNn5WmpfZyx9HdV5jwT/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header-section container">
+            <a href="../index.html" class="logo">
+                <img src="../media/logo.png" alt="" width="100px">
+            </a>
+            <h1>HOTEL SAN RAFAEL</h1>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li id="menuItem"><a class="menuLink select" href="../index.html">Inicio</a></li>
+                    <li id="menuItem"><a class="menuLink" href="#">Paquetes</a></li>
+                    <li id="menuItem"><a class="menuLink" href="../pages/tiempo.html">Pronóstico</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="../media/icon-suitcase.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+<!-- 
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div> -->
+
+
+                </div>
+                <h2 class="total-precio">Total: $<strong class="price-total">0</strong></h2>
+            </div>
+
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion0.jpg" alt="">
+                    <p>$<span>3500</span>p/día</p>
+                </div>
+                <p class="title">Valle Grande</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion1.jpg" alt="">
+                    <p>$<span>4500</span>p/día</p>
+                </div>
+                <p class="title"> Los Reyunos</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion2.jpg" alt="">
+                    <p>$<span>2800</span>p/día</p>
+                </div>
+                <p class="title"> Cañón del Atuel</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion3.jpg" alt="">
+                    <p>$<span>3000</span>p/día</p>
+                </div>
+                <p class="title"> El Nihuil</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion4.jpg" alt="">
+                    <p>$<span>2000</span>p/día</p>
+                </div>
+                <p class="title"> Bajo Rosado</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion5.jpg" alt="">
+                    <p>$<span>7500</span>p/día</p>
+                </div>
+                <p class="title"> Las Leñas (Malargüe)</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion6.jpg" alt="">
+                    <p>$<span>500</span>p/día</p>
+                </div>
+                <p class="title"> Parque de la Aventura</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="../media/opcion7.jpg" alt="">
+                    <p>$<span>800</span>p/día</p>
+                </div>
+                <p class="title">Laberinto de Borges</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.facebook.com/" class="icon-facebook"></a>
+        <a href="https://www.instagram.com/" class="icon-instagram" ></a>
+        <a href="https://www.whatsapp.com/" class="icon-whatsapp"></a>
+    </footer>
+
+    <script>
+        function showCart(x) {
+            document.getElementById("products-id").style.display = "block";
+        }
+
+        function closeBtn() {
+            document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="../javascript/paquetes.js"></script>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

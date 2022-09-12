@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico | Hotel San Rafael</title>
+    <link rel="stylesheet" href="../estilos.css/tiempo.css">
+    <link rel="stylesheet" href="../estilos.css/paquetes.css">
+    <link rel="stylesheet" href="../estilos.css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-section container barra">
+            <a href="../index.html" class="logo">
+                <img src="../media/logo.png" alt="" width="100px">
+            </a>
+            <h1>HOTEL SAN RAFAEL</h1>
+            <nav class="nav" id="nav">
+                <ul class="menu menuItem">
+                    <li id="menuItem"><a class="menuLink select" href="../index.html">Inicio</a></li>
+                    <li id="menuItem"><a class="menuLink" href="../pages/paquetes.html">Paquetes</a></li>
+                    <li id="menuItem"><a class="menuLink" href="#">Pronóstico</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img class="cart" src="../media/icon-suitcase.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+        </div>
+    </header> 
+
+
+    <section class="weather-content">
+        <h1>Pronóstico del tiempo</h1>
+        <div class="result">
+            <p>Agrege cuidad y país</p>
+
+
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Ciudad">
+            <select name="" id="country">
+                <option disabled selected value="">Seleccione el país</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+            </select>
+            <input type="submit" name="" id="" value="Ver pronóstico">
+        </form>
+    </section>
+    <script src="../javascript/tiempo.js"></script>
+</body>
+
+</html>

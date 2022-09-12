@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Hotel San Rafael</title>
+    <link href="https://file.myfontastic.com/ojYRNn5WmpfZyx9HdV5jwT/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./estilos.css/paquetes.css">
+    <link rel="stylesheet" href="./estilos.css/styles.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-section container barra">
+            <a href="#" class="logo">
+                <img src="./media/logo.png" alt="" width="100px">
+            </a>
+            <h1>HOTEL SAN RAFAEL</h1>
+            <nav class="nav" id="nav">
+                <ul class="menu menuItem">
+                    <li id="menuItem"><a class="menuLink select" href="#">Inicio</a></li>
+                    <li id="menuItem"><a class="menuLink" href="./pages/paquetes.html">Paquetes</a></li>
+                    <li id="menuItem"><a class="menuLink" href="./pages/tiempo.html">Pronóstico</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img class="cart" src="../media/icon-suitcase.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- -------------------PORTADA----------------- -->
+        <div class='portada'>
+            <img src="./media/portada.jpg" class="img-portada" alt="">
+            <div class="contenedor-portada">
+                <h2>¡Te invitamos a conocer nuestra ciudad!</h2>
+                <h3 class="reserva-txt">Hacé tu reserva acá</h3>
+            </div>
+        </div>
+
+
+        <!-- ----------------LOGIN Y REGISTER------------------ -->
+        <div class="contenedor-todo">
+            <div class="caja-trasera">
+                <div class="cajaTrasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn-iniciarSesion">Iniciar Sesión</button>
+                </div>
+                <div class="cajaTrasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn-registrarse">Regístrarse</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor-forms">
+                <!--Login-->
+                <form action="" class="form-login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" id="usuarioLog" placeholder="Nombre de usuario">
+                    <input type="password" id="passwordLogin" placeholder="Contraseña">
+                    <div class="form-check">
+                    </div>
+                    <button id="btn-login">Ingresar</button>
+                </form>
+
+                <!--Register-->
+                <form action="" class="form-register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                    <input type="text" id="email" placeholder="Correo Electronico">
+                    <input type="text" id="usuario" placeholder="Usuario">
+                    <input type="password" id="contraseña" placeholder="Contraseña">
+                    <button id="btn-register">Regístrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>

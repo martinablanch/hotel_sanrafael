@@ -1,0 +1,334 @@
+body {
+    font-family: system-ui;
+}
+
+header {
+    background-color: #e4e4e8;
+    box-shadow: 0 7px 8px -3px grey;
+    width: 100%;
+    z-index: 99;
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.header-section div {
+    position: relative;
+}
+
+.header-section p {
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: rgb(64, 140, 165);
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+
+.logo {
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.cart {
+    width: 39px;
+    height: 38px;
+}
+
+.cart-products {
+    position: absolute !important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+
+    min-width: 290px;
+}
+
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    color: black;
+}
+
+
+.icon-suitcase {
+    margin: 5px;
+    color: black;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+
+.icon-suitcase {
+    display: block;
+    width: 40px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 980px;
+}
+
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 23vh;
+}
+
+
+#menuItem {
+    display: inline;
+    padding-left: 10px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.img-portada{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}  
+
+.portada {
+    background-color:white;
+    margin-top: -62px;
+    position: relative;
+    z-index: -1000;
+}
+
+.img-portada {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 1500px;
+    height: 800px;
+}
+
+.contenedor-portada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    color: black;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.reserva-txt{
+    color: black;
+    font-size: 16px;
+}
+
+
+/* -----------CARRITO------------ */
+.cart-products {
+    position: absolute !important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+
+    min-width: 290px;
+}
+
+.icon-cart:hover {
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+
+p.close-btn {
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+/* ------------------INICIO DE SESIÓN Y REGISTRO--------------------- */
+.contenedor-todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja-trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color:rgb(64, 140, 165);
+
+}
+
+.caja-trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+    margin-bottom: 50px;
+}
+
+
+.caja-trasera div p,
+.caja-trasera button{
+    margin-top: 15px;
+}
+
+.caja-trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja-trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja-trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja-trasera button:hover{
+    background: #fff;
+    color:rgb(64, 140, 165);
+    margin-bottom: 50px;
+}
+
+
+.contenedor-forms{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor-forms form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor-forms form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(64, 140, 165);
+}
+
+.contenedor-forms form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor-forms form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: rgb(64, 140, 165);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+.form-login{
+    opacity: 1;
+    display: block;
+}
+.form-register{
+    display: none;
+}
+
+footer{
+    margin-bottom: 200px;
+}
+
+.icon-instagram, .icon-facebook, .icon-whatsapp{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+
